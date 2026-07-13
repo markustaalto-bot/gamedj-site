@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game DJ — The soundboard for live sports events</title>
+<meta name="description" content="Game DJ is a desktop app for sports event DJs: local audio, Spotify, cue points, hotkeys, timelines and automated announcements — trigger every sound in a heartbeat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">
+      <span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5v14M16 5v14M8 9h8M8 15h8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+      Game DJ
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#features" class="hide-sm">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="pricing.html" class="btn btn-primary" style="padding:9px 18px;">Start free</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="badge-pill"><span class="pulse"></span> Built for game day</span>
+        <h1>The soundboard for <span class="gradient-text">live sports</span></h1>
+        <p class="lead">Game DJ turns your laptop into a pro sports-event control desk. Goal horns, intro music, PA announcements and Spotify — every cue fires the instant the action happens.</p>
+        <div class="cta-row">
+          <a href="pricing.html" class="btn btn-primary btn-lg">Get started — €5/mo</a>
+          <a href="index.html#features" class="btn btn-lg">See features</a>
+        </div>
+        <div class="trust-row">
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> macOS &amp; Windows</span>
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Auto-updates</span>
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Works offline</span>
+        </div>
+      </div>
+
+      <div class="board-wrap">
+        <svg viewBox="0 0 520 430" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="pBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f8cff"/><stop offset="1" stop-color="#7b5cff"/></linearGradient>
+            <linearGradient id="pGreen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2fd07a"/><stop offset="1" stop-color="#19c5d6"/></linearGradient>
+            <linearGradient id="pCoral" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff6b4a"/><stop offset="1" stop-color="#ff5d9e"/></linearGradient>
+            <linearGradient id="pPurple" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a855f7"/><stop offset="1" stop-color="#7b5cff"/></linearGradient>
+            <linearGradient id="pAmber" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb020"/><stop offset="1" stop-color="#ff6b4a"/></linearGradient>
+            <linearGradient id="pTeal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#19c5d6"/><stop offset="1" stop-color="#4f8cff"/></linearGradient>
+          </defs>
+          <rect x="10" y="10" width="500" height="410" rx="22" fill="#141824" stroke="rgba(255,255,255,0.1)"/>
+          <circle cx="38" cy="40" r="6" fill="#ff5f57"/><circle cx="60" cy="40" r="6" fill="#febc2e"/><circle cx="82" cy="40" r="6" fill="#28c840"/>
+          <text x="260" y="45" text-anchor="middle" fill="#8b93a5" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="600">Game DJ</text>
+          <line x1="10" y1="66" x2="510" y2="66" stroke="rgba(255,255,255,0.08)"/>
+
+          <g font-family="Space Grotesk, sans-serif" font-weight="700" font-size="16" fill="#ffffff" text-anchor="middle">
+            <rect x="34" y="86" width="140" height="90" rx="14" fill="url(#pCoral)"/><text x="104" y="137">GOAL!</text>
+            <rect x="190" y="86" width="140" height="90" rx="14" fill="url(#pBlue)"/><text x="260" y="137">HORN</text>
+            <rect x="346" y="86" width="140" height="90" rx="14" fill="url(#pGreen)"/><text x="416" y="137">INTRO</text>
+            <rect x="34" y="190" width="140" height="90" rx="14" fill="url(#pPurple)"/><text x="104" y="241">TIMEOUT</text>
+            <rect x="190" y="190" width="140" height="90" rx="14" fill="url(#pAmber)"/><text x="260" y="241">PENALTY</text>
+            <rect x="346" y="190" width="140" height="90" rx="14" fill="url(#pTeal)"/><text x="416" y="241">POWER PLAY</text>
+          </g>
+
+          <rect x="34" y="300" width="452" height="96" rx="14" fill="#0e1119" stroke="rgba(255,255,255,0.08)"/>
+          <polyline points="52,348 74,332 92,360 110,318 128,366 146,340 164,352 182,322 200,360 218,336 236,356 254,326 272,362 290,338 308,354 326,320 344,364 362,342 380,352 398,330 416,358 434,344 452,350 470,338"
+            fill="none" stroke="url(#pGreen)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="446" cy="348" r="22" fill="url(#pGreen)"/>
+          <path d="M440 339l14 9-14 9z" fill="#04140b"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Everything you need on game day</h2>
+        <p>Built for real arenas: fast, reliable, and rock-solid even when the venue Wi-Fi drops.</p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="ico coral"><svg viewBox="0 0 24 24" fill="none"><path d="M3 10v4h4l5 5V5L7 10H3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 9a3 3 0 010 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>Local audio</h3>
+          <p>Import your own MP3/WAV files, set cue points at the start and end, and fire them instantly with hotkeys.</p>
+        </div>
+        <div class="feature">
+          <div class="ico green"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M7.5 10.5c3-1 6.5-.6 9 1M8 13.5c2.4-.7 5-.4 7 .9M8.5 16c1.8-.5 3.7-.3 5.2.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+          <h3>Spotify control</h3>
+          <p>Play background music and playlists straight from Spotify — no extra device or mixer needed.</p>
+        </div>
+        <div class="feature">
+          <div class="ico blue"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M7 10h.01M11 10h.01M15 10h.01M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>Hotkeys</h3>
+          <p>Bind every sound to its own key — the goal horn blasts the very second the puck crosses the line.</p>
+        </div>
+        <div class="feature">
+          <div class="ico purple"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="8" cy="7" r="2" fill="#141824" stroke="currentColor" stroke-width="2"/><circle cx="15" cy="12" r="2" fill="#141824" stroke="currentColor" stroke-width="2"/><circle cx="10" cy="17" r="2" fill="#141824" stroke="currentColor" stroke-width="2"/></svg></div>
+          <h3>Timeline</h3>
+          <p>Script your match audio in advance and run it clip by clip with smooth crossfades.</p>
+        </div>
+        <div class="feature">
+          <div class="ico amber"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="12" rx="3" stroke="currentColor" stroke-width="2"/><path d="M5 11a7 7 0 0014 0M12 18v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>Announcements (TTS)</h3>
+          <p>Automated goal and event announcements as spoken audio — rosters import straight from Excel.</p>
+        </div>
+        <div class="feature">
+          <div class="ico teal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0M12 19h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <h3>Works offline</h3>
+          <p>Local sounds play even if the arena network fails. No dependency on the internet mid-game.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>One simple price <span class="eq"><i></i><i></i><i></i><i></i><i></i></span></h2>
+        <p>No hidden fees. Cancel anytime.</p>
+      </div>
+      <div class="price-card">
+        <div class="price-badge">14-day money-back guarantee</div>
+        <div class="amount">€5<small> / month</small></div>
+        <ul>
+          <li>All features unlocked</li>
+          <li>macOS and Windows</li>
+          <li>Automatic updates</li>
+          <li>Cancel whenever you want</li>
+        </ul>
+        <a href="pricing.html" class="btn btn-primary" style="width:100%; justify-content:center;">Start with Game DJ</a>
+        <p class="price-note">Billing handled securely by Paddle. VAT included.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final">
+    <div class="wrap">
+      <h2>Ready to run the show?</h2>
+      <p>Join the DJs who make every game sound bigger.</p>
+      <a href="pricing.html" class="btn btn-primary btn-lg">Get Game DJ — €5/mo</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-inner">
+    <div>© 2026 Waver Corp Oy · <a href="mailto:gamedj@waveric.fi">gamedj@waveric.fi</a></div>
+    <div class="footer-links">
+      <a href="pricing.html">Pricing</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refunds</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

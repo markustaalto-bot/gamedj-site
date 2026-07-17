@@ -325,11 +325,13 @@ footer.site { border-top: 1px solid var(--border); padding: 44px 0; margin-top: 
 
 /* Long Finnish compounds ("urheilutapahtumiin") set a wide min-content floor.
    Grid columns default to min-width:auto, so that floor overflows the container
-   instead of wrapping — body's overflow-x:hidden then silently clips it. */
+   instead of wrapping — body's overflow-x:hidden then silently clips it.
+   min-width:0 lets the column shrink; overflow-wrap breaks an oversized word only
+   as a last resort. NO hyphens:auto — it inserts hyphens mid-word even when the
+   word would fit ("näppäimen pääs-sä"), which reads as a typo. */
 .hero-grid > * { min-width: 0; }
 .hero h1, .section-head h2, .cta-final h2, .shot-text h3 {
   overflow-wrap: break-word;
-  hyphens: auto;
 }
 
 @media (max-width: 860px) {

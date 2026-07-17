@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guide — Game DJ</title>
+<meta name="description" content="How to use Game DJ: sounds and hotkeys, the timeline, Spotify and Apple Music, automated match announcements, and licensing.">
+<link rel="canonical" href="https://gamedj.net/docs.html">
+<link rel="alternate" hreflang="en" href="https://gamedj.net/docs.html">
+<link rel="alternate" hreflang="fi" href="https://gamedj.net/fi/docs.html">
+<link rel="alternate" hreflang="x-default" href="https://gamedj.net/docs.html">
+<script src="lang.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">
+      <span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5v14M16 5v14M8 9h8M8 15h8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+      Game DJ
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#tour" class="hide-sm">Features</a>
+      <a href="docs.html" class="hide-sm">Guide</a>
+      <a href="pricing.html">Pricing</a>
+      <span class="lang-switch"><a data-lang="en" href="/docs.html">EN</a><a data-lang="fi" href="/fi/docs.html">FI</a></span>
+      <a href="download.html" class="btn btn-primary" style="padding:9px 18px;">Download</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap docs-layout">
+  <aside class="docs-nav">
+    <strong>Guide</strong>
+    <a href="#install">Install and first run</a>
+    <a href="#licence">Trial and licence</a>
+    <a href="#sounds">Categories and sounds</a>
+    <a href="#editing">Cue points, fades, hotkeys</a>
+    <a href="#voice">Recording and speech</a>
+    <a href="#streaming">Spotify and Apple Music</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#announcing">Match announcements</a>
+    <a href="#profiles">Profiles</a>
+    <a href="#settings">Settings</a>
+    <a href="#updates">Updates</a>
+    <a href="#help">Troubleshooting</a>
+  </aside>
+
+  <div class="docs-body">
+    <h1 style="font-size:38px; margin-bottom:10px;">Game DJ guide</h1>
+    <p class="lede">Everything the app does, in the order you'll meet it. If you're in a hurry: install it, open a category, add a few standard sounds, give them hotkeys, and you're ready for a game.</p>
+
+    <h2 id="install">Install and first run</h2>
+    <p>Open the .dmg you downloaded and drag <strong>Game DJ</strong> to your Applications folder. The app is signed and notarised by Apple, so it opens normally — no security warnings to click past.</p>
+    <p>On first launch you get a default profile with a few empty categories. Nothing is locked: the 14-day trial has every feature switched on.</p>
+    <div class="note">
+      <p><strong>The one thing worth doing first:</strong> open a category, choose <em>+ Add audio → Standard sounds</em>, and add a goal horn and a buzzer. You now have a working soundboard, before importing a single file of your own.</p>
+    </div>
+
+    <h2 id="licence">Trial and licence</h2>
+    <p>The trial runs for <strong>14 days</strong> from first launch. A banner in the bottom-left corner shows <em>Trial — N days left</em>. No account and no card are needed.</p>
+    <h3>Subscribing</h3>
+    <p>Click <strong>Buy a license</strong> in the trial banner or in the activation window. Your browser opens a secure Paddle checkout. When the payment goes through, the app picks up the licence and activates itself — nothing to copy or paste.</p>
+    <h3>Activating a key you were given</h3>
+    <p>If you received a key directly (a pilot or demo licence, for example), click <strong>Activate</strong> and paste the whole key into the box. Keys are long — make sure you copied all of it, since a truncated key reads as invalid.</p>
+    <h3>How licensing behaves</h3>
+    <ul>
+      <li><strong>It works offline.</strong> Your licence is verified on your own machine, so a dead network never locks you out mid-game.</li>
+      <li><strong>Device limit.</strong> Each key covers a set number of computers. Past that, activation refuses with <em>already used on too many devices</em> — email us and we'll reset it.</li>
+      <li><strong>Cancelling.</strong> Access continues to the end of the period you already paid for.</li>
+    </ul>
+
+    <h2 id="sounds">Categories and sounds</h2>
+    <p>Everything lives in categories — <em>Goals</em>, <em>Intros</em>, <em>Ads</em>, whatever suits you. Add one with <strong>+ Category</strong> in the top bar. Drag categories by their handle to reorder them.</p>
+    <p>Inside a category, <strong>+ Add audio</strong> opens six ways to get sound in:</p>
+    <ul>
+      <li><strong>Files from computer</strong> — pick individual MP3/WAV files.</li>
+      <li><strong>Folder from computer</strong> — import everything in a folder at once.</li>
+      <li><strong>Standard sounds</strong> — the 20 built-in stadium sounds.</li>
+      <li><strong>From Spotify</strong> — see <a href="#streaming">Spotify and Apple Music</a>.</li>
+      <li><strong>Record audio</strong> — capture an ad from your microphone.</li>
+      <li><strong>Write speech</strong> — type a line and have it spoken.</li>
+    </ul>
+
+    <h3>The 20 standard sounds</h3>
+    <p>Game DJ generates its own stadium sounds, so they're included with the app and there's no third-party licence attached to them. Preview each with <strong>▶</strong> and <strong>Add</strong> the ones you want, or take the lot with <strong>Add all</strong>.</p>
+    <p>Game buzzer · Short buzzer · Air horn · Air horn ×3 · Goal horn · Fog horn · Referee whistle · Whistle ×3 · Countdown 3-2-1 · Start bell · Siren · Charge! · Fanfare · Victory fanfare · Drumroll + cymbal · Cymbal crash · Crowd cheer · Applause · Boo · Stomp &amp; clap</p>
+
+    <h3>The top bar</h3>
+    <ul>
+      <li><span class="kbd">Esc</span> — <strong>Stop</strong> whatever is playing.</li>
+      <li><span class="kbd">Space</span> — <strong>Fade</strong> out, or resume with a fade.</li>
+      <li><strong>↺ Reset</strong> — marks every track unplayed again. Use it between matches so you can see at a glance what you've already used.</li>
+      <li><strong>Vol</strong> — master volume.</li>
+    </ul>
+
+    <h2 id="editing">Cue points, fades and hotkeys</h2>
+    <p>Click <strong>Edit</strong> on any track to open its editor. This is where a rough file becomes a tight cue.</p>
+    <ul>
+      <li><strong>Start</strong> and <strong>End</strong> (<code>m:ss.d</code>) — trim the silence off the front so the horn lands the moment you press the key. Leave End empty to play to the end.</li>
+      <li><strong>Set from playhead</strong> — play the track, and when you hear the right spot, click this instead of guessing numbers.</li>
+      <li><strong>Fade in</strong> / <strong>Fade out</strong> — in seconds.</li>
+      <li><strong>On track end</strong> — <em>Play again</em> (loops, good for warm-up beds), <em>Go to next</em>, or <em>Stop</em>.</li>
+      <li><strong>Hotkey</strong> — press a number from <span class="kbd">1</span> to <span class="kbd">9</span>. That key now fires this sound from anywhere in the app.</li>
+      <li><strong>Image</strong> — give the pad artwork so you find it by sight, not by reading.</li>
+    </ul>
+    <div class="note">
+      <p><strong>Nine hotkeys, not nine sounds.</strong> The hotkeys are the ones you need to hit without looking — goal horn, buzzer, whistle. Everything else you click, and there's no limit on how many of those you keep.</p>
+    </div>
+
+    <h2 id="voice">Recording and speech</h2>
+    <h3>Record audio</h3>
+    <p>Records a sponsor read or an announcement straight from your microphone and saves it into a category as a normal track — cue points, fades and hotkeys all apply. The first time, macOS asks permission to use the mic.</p>
+    <h3>Write speech</h3>
+    <p>Type what the announcer should say, pick the language (Finnish or English) and the voice (female or male), and <strong>▶ Preview</strong> it. Happy with it? <strong>Save to category</strong>. It becomes an ordinary audio file, which means it keeps working later even with no network.</p>
+    <div class="note warn">
+      <p><strong>Generating speech needs a connection</strong>, because the voice is synthesised online. Do your sponsor reads before you get to the hall and you'll never notice. Anything you already generated plays offline like any other file.</p>
+    </div>
+
+    <h2 id="streaming">Spotify and Apple Music</h2>
+    <p><strong>Streaming</strong> in the top bar opens the panel. Game DJ doesn't stream anything itself — it drives the app already running on your computer, so background music comes from the subscription you already pay for.</p>
+
+    <p>Spotify has two modes, picked at the top of the panel.</p>
+
+    <h3>Normal mode</h3>
+    <p>The default, and there's nothing to configure. Keep the Spotify desktop app open and logged in, and Game DJ controls it directly. Add tracks by pasting a Spotify link (<code>open.spotify.com/track/…</code>); the name and cover art come along automatically.</p>
+    <ul>
+      <li><strong>Premium is required</strong> — Spotify only permits this remote control on Premium accounts.</li>
+      <li><strong>On Windows</strong>, normal mode can only start a track: no pause, seek or volume from Game DJ. Full control works on a Mac.</li>
+      <li><strong>Playlists</strong> are added as a single background pad rather than as individual tracks. Spotify doesn't let the app list a playlist's contents, so the whole list plays as one thing. For individual songs, paste their links.</li>
+      <li><strong>No search</strong> — you add tracks by link. If you want search, use developer mode.</li>
+    </ul>
+
+    <h3>Spotify developer mode</h3>
+    <p>The alternative, for when you'd rather <strong>search for tracks inside Game DJ</strong> than paste links. It costs you a one-time setup: create your own app in Spotify's developer portal, register the redirect URI exactly as <code>http://127.0.0.1:8888/callback</code>, then paste the Client ID into Game DJ and log in once.</p>
+    <p>Most people never need this. Normal mode does the same job as long as you have the links.</p>
+
+    <h3>Apple Music (Mac only)</h3>
+    <p>Same idea: Game DJ controls the Music app on your Mac. The catch is that Apple only allows playback of songs <strong>in your own library</strong> — not arbitrary catalogue links. So add the songs you want in Music first (<em>+ Add</em>), then search for them in Game DJ. macOS will ask once for permission to control Music; say yes. An Apple Music subscription is required, and this doesn't work on Windows.</p>
+
+    <div class="note warn">
+      <p><strong>Streaming is the one part that needs the network.</strong> Local sounds — including your goal horn — never do. If the arena Wi-Fi dies, you lose the background music, not the game.</p>
+    </div>
+
+    <h2 id="timeline">Timeline</h2>
+    <p>The timeline sits under the categories and holds the running order: warm-up, line-ups, sponsor reads, anthem. Drag sounds onto it from any category — that copies them, so the original pad stays where it is.</p>
+    <ul>
+      <li><strong>▶ Start</strong> begins the sequence; <strong>⏭ Go to next</strong> moves on with a crossfade; <strong>⏮ Go to start</strong> rewinds; <strong>Clear</strong> empties it.</li>
+      <li><strong>Click</strong> anywhere on the timeline to set where playback starts.</li>
+      <li><strong>Ctrl + scroll wheel</strong> zooms; the <strong>middle mouse button</strong> pans.</li>
+      <li>Clip width matches duration, so the layout is a real picture of how long things take.</li>
+    </ul>
+    <p>Above each clip is its position in the sequence; below it is the <strong>predicted wall-clock time</strong>. That prediction anchors to when the playing clip actually started — so if you start the warm-up four minutes late, every time below shifts with it and still tells the truth.</p>
+
+    <h2 id="announcing">Match announcements</h2>
+    <p><strong>📣 Announce</strong> in the top bar opens the announcing panel. Type a scorer's number and Game DJ speaks the whole thing — name, assist, new score — in Finnish or English.</p>
+
+    <h3>Pick your sport first</h3>
+    <p>The sport lives in <strong>Settings → General</strong>, because it's a set-and-forget choice. It decides which event types you get and which announcement wording is used:</p>
+    <ul>
+      <li><strong>Floorball</strong> and <strong>Ice hockey</strong> — Goal, Penalty, Timeout.</li>
+      <li><strong>Football</strong> — Goal, Card, Substitution. No penalties or timeouts.</li>
+    </ul>
+    <p>Each sport keeps its own templates, so tuning the floorball wording never touches your football wording.</p>
+
+    <h3>Rosters</h3>
+    <p>Enter the team names, then fill the rosters. <strong>⇪ Import from Excel</strong> reads a sheet with the number and the name in their own columns — a header row is fine, and the importer works it out. Not sure of the shape? <strong>⇩ Export template</strong> gives you a file to fill in. You can also type players in by hand with <strong>+ Add player</strong>.</p>
+    <p>Once a roster is loaded, you only ever type numbers: the names come from it.</p>
+
+    <h3>Announcing an event</h3>
+    <p>Choose the event type, the match time, the team and the player number(s), then press <strong>📣 Announce</strong>. Or use <strong>Save event without announcing</strong> to log something quietly — handy when the hall PA is busy.</p>
+    <p>The score is computed from the events themselves, so it can't drift out of sync. <strong>↶ Undo last</strong> removes the most recent event; <strong>Reset match</strong> clears the lot.</p>
+    <div class="note">
+      <p><strong>Football time is announced in whole minutes.</strong> Enter 6:30 and the announcement says the <em>7th minute</em> — matching how football time is actually spoken. Floorball and ice hockey announce minutes and seconds.</p>
+    </div>
+
+    <h3>Fixing a mistake</h3>
+    <p>Wrong scorer? <strong>Tap the event</strong> in the list to edit it. Correct the number and you get two choices: <strong>📣 Announce correction</strong>, which reads out something like <em>“Correction: SB Pro's 1st goal was scored by number 14”</em>, or <strong>Save correction without announcing</strong> if the crowd never needs to know.</p>
+
+    <h3>Getting the events out</h3>
+    <p><strong>⇩ Export to Excel</strong> writes the whole event list — time, type, team, players, assists, penalty minutes, cards, substitutions — to a spreadsheet for the match report.</p>
+
+    <h3>Rewriting what the announcer says</h3>
+    <p>Every sentence is a template, edited under <strong>Settings → Announcements</strong> per sport and per language. Variables get filled in as it speaks: <code>{team}</code>, <code>{time}</code>, <code>{player}</code>, <code>{playerName}</code>, <code>{assist}</code>, <code>{homeScore}</code>, <code>{awayScore}</code> and more. Anything inside <code>[ ]</code> is dropped when its data is missing — so <code>[Assist number {assist}.]</code> simply disappears on an unassisted goal. <strong>Reset to defaults</strong> undoes any experiment.</p>
+
+    <h3>When a name is pronounced wrong</h3>
+    <p>Club abbreviations trip up speech synthesis — Finnish is especially prone to it. Under <strong>Settings → Announcing → Pronunciations</strong>, write the spelling on the left and how it should sound on the right (<em>FoSu</em> → <em>Fosu</em>). It applies to every announcement and every written speech.</p>
+
+    <h2 id="profiles">Profiles</h2>
+    <p><strong>Profiles</strong> in the top bar keeps separate sets of categories and tracks — one per team, venue or event type. Export a profile to a file and share it with another operator; cue times, fades and Spotify tracks travel with it.</p>
+    <div class="note warn">
+      <p>Apple Music tracks are the exception: they're tied to the library on that specific Mac, so they don't survive a trip to another computer. Game DJ tells you which ones it couldn't match and you add them to Music there.</p>
+    </div>
+
+    <h2 id="settings">Settings</h2>
+    <p><strong>⚙ Settings</strong> in the top bar, three tabs:</p>
+    <ul>
+      <li><strong>General</strong> — app language (Finnish/English, changes instantly, no restart) and your sport.</li>
+      <li><strong>Announcing</strong> — announcer settings and the pronunciation list.</li>
+      <li><strong>Announcements</strong> — the announcement templates, per sport and language.</li>
+    </ul>
+
+    <h2 id="updates">Updates</h2>
+    <p>Game DJ updates itself. A new version downloads quietly in the background; a banner then offers to restart, and the update is applied. You're never the one chasing a download link an hour before a game.</p>
+
+    <h2 id="help">Troubleshooting</h2>
+    <h3>The microphone won't record</h3>
+    <p>macOS blocks mic access until you allow it: <em>System Settings → Privacy &amp; Security → Microphone</em>, switch Game DJ on, then reopen the app.</p>
+    <h3>Spotify doesn't respond</h3>
+    <p>Check three things: the Spotify desktop app is open and logged in, the account is <strong>Premium</strong>, and — on Windows — remember normal mode can only start tracks, not pause or seek them.</p>
+    <h3>Apple Music does nothing</h3>
+    <p>The first attempt triggers a macOS permission prompt (<em>Game DJ wants to control Music</em>). If you dismissed it, re-enable it under <em>System Settings → Privacy &amp; Security → Automation</em>. Also check the song is in your library — catalogue-only songs can't be played this way.</p>
+    <h3>An announcement mangles a name</h3>
+    <p>Add it to <strong>Settings → Announcing → Pronunciations</strong>, spelling on the left and sound on the right.</p>
+    <h3>The licence key won't activate</h3>
+    <p>Most often it's an incomplete copy — the keys are long, so grab all of it. Otherwise the key may be on too many devices already, or it may have been revoked. Email <a href="mailto:gamedj@waveric.fi">gamedj@waveric.fi</a> and we'll sort it out.</p>
+    <h3>Still stuck</h3>
+    <p>Write to <a href="mailto:gamedj@waveric.fi">gamedj@waveric.fi</a>. Tell us what you were doing and which version you're on — a real person reads it.</p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-inner">
+    <div>© 2026 Waver Corp Oy · <a href="mailto:gamedj@waveric.fi">gamedj@waveric.fi</a></div>
+    <div class="footer-links">
+      <a href="download.html">Download</a>
+      <a href="docs.html">Guide</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refunds</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Highlight the section you're reading in the sidebar. */
+(function () {
+  var links = [].slice.call(document.querySelectorAll('.docs-nav a'))
+  var targets = links
+    .map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)) })
+    .filter(Boolean)
+  if (!targets.length || !window.IntersectionObserver) return
+
+  var visible = {}
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting })
+    var active = null
+    for (var i = 0; i < targets.length; i++) {
+      if (visible[targets[i].id]) { active = targets[i].id; break }
+    }
+    if (!active) return
+    links.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + active)
+    })
+  }, { rootMargin: '-80px 0px -70% 0px' })
+  targets.forEach(function (t) { obs.observe(t) })
+})()
+</script>
+
+</body>
+</html>

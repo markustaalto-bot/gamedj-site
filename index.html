@@ -4,7 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Game DJ — The soundboard for live sports events</title>
-<meta name="description" content="Game DJ is a desktop app for sports event DJs: local audio, Spotify, cue points, hotkeys, timelines and automated announcements — trigger every sound in a heartbeat.">
+<meta name="description" content="Game DJ is a desktop app for sports event DJs: local audio, Spotify, cue points, hotkeys, timelines and automated announcements — trigger every sound in a heartbeat. Free 14-day trial.">
+<link rel="canonical" href="https://gamedj.net/index.html">
+<link rel="alternate" hreflang="en" href="https://gamedj.net/index.html">
+<link rel="alternate" hreflang="fi" href="https://gamedj.net/fi/index.html">
+<link rel="alternate" hreflang="x-default" href="https://gamedj.net/index.html">
+<script src="lang.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -19,9 +24,11 @@
       Game DJ
     </a>
     <nav class="nav-links">
-      <a href="index.html#features" class="hide-sm">Features</a>
+      <a href="index.html#tour" class="hide-sm">Features</a>
+      <a href="docs.html" class="hide-sm">Guide</a>
       <a href="pricing.html">Pricing</a>
-      <a href="pricing.html" class="btn btn-primary" style="padding:9px 18px;">Start free</a>
+      <span class="lang-switch"><a data-lang="en" href="/index.html">EN</a><a data-lang="fi" href="/fi/index.html">FI</a></span>
+      <a href="download.html" class="btn btn-primary" style="padding:9px 18px;">Download</a>
     </nav>
   </div>
 </header>
@@ -34,18 +41,18 @@
         <h1>The soundboard for <span class="gradient-text">live sports</span></h1>
         <p class="lead">Game DJ turns your laptop into a pro sports-event control desk. Goal horns, intro music, PA announcements and Spotify — every cue fires the instant the action happens.</p>
         <div class="cta-row">
-          <a href="pricing.html" class="btn btn-primary btn-lg">Get started — €5/mo</a>
-          <a href="index.html#features" class="btn btn-lg">See features</a>
+          <a href="download.html" class="btn btn-primary btn-lg">Try free for 14 days</a>
+          <a href="index.html#tour" class="btn btn-lg">See it in action</a>
         </div>
         <div class="trust-row">
-          <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> macOS &amp; Windows</span>
-          <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Auto-updates</span>
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> No card for the trial</span>
           <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Works offline</span>
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg> Auto-updates</span>
         </div>
       </div>
 
       <div class="board-wrap">
-        <svg viewBox="0 0 520 430" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 520 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Game DJ soundboard with pads for goal, horn, intro, timeout, penalty and power play">
           <defs>
             <linearGradient id="pBlue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f8cff"/><stop offset="1" stop-color="#7b5cff"/></linearGradient>
             <linearGradient id="pGreen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2fd07a"/><stop offset="1" stop-color="#19c5d6"/></linearGradient>
@@ -67,6 +74,10 @@
             <rect x="190" y="190" width="140" height="90" rx="14" fill="url(#pAmber)"/><text x="260" y="241">PENALTY</text>
             <rect x="346" y="190" width="140" height="90" rx="14" fill="url(#pTeal)"/><text x="416" y="241">POWER PLAY</text>
           </g>
+          <g font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="rgba(255,255,255,0.75)">
+            <text x="46" y="102">1</text><text x="202" y="102">2</text><text x="358" y="102">3</text>
+            <text x="46" y="206">4</text><text x="202" y="206">5</text><text x="358" y="206">6</text>
+          </g>
 
           <rect x="34" y="300" width="452" height="96" rx="14" fill="#0e1119" stroke="rgba(255,255,255,0.08)"/>
           <polyline points="52,348 74,332 92,360 110,318 128,366 146,340 164,352 182,322 200,360 218,336 236,356 254,326 272,362 290,338 308,354 326,320 344,364 362,342 380,352 398,330 416,358 434,344 452,350 470,338"
@@ -76,9 +87,208 @@
         </svg>
       </div>
     </div>
+
+    <div class="wrap">
+      <div class="sports-strip">
+        <span class="sport-chip"><svg viewBox="0 0 24 24" fill="none"><path d="M5 20c4-1 7-4 9-8s3-7 3-9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="6" cy="18" r="2.5" stroke="currentColor" stroke-width="2"/></svg> Floorball</span>
+        <span class="sport-chip"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19c5-1 9-5 11-10 1-2 2-4 4-5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><ellipse cx="6" cy="18" rx="3" ry="1.8" stroke="currentColor" stroke-width="2"/></svg> Ice hockey</span>
+        <span class="sport-chip"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7l3.5 2.6-1.3 4.2h-4.4L8.5 9.6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg> Football</span>
+        <span class="sport-chip"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> Any live event</span>
+      </div>
+    </div>
   </section>
 
-  <section id="features">
+  <section id="tour">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>See what you get</h2>
+        <p>Three panels do the whole job: sounds, a scripted timeline, and the announcer.</p>
+      </div>
+
+      <div class="shots">
+        <div class="shot">
+          <div class="shot-text">
+            <div class="shot-eyebrow gradient-text">The soundboard</div>
+            <h3>Every sound one key away</h3>
+            <p>Open the app and 20 stadium sounds are already there. Add your own MP3s and WAVs alongside them, group everything into categories, and bind each pad to a number key. Trim the dead air with cue points so the horn hits on the first frame — not half a second later.</p>
+            <ul>
+              <li>20 built-in sounds: horns, buzzers, whistles, fanfares, crowds</li>
+              <li>Cue points for start and end, plus fades</li>
+              <li>A number key per sound — <span class="kbd">1</span>–<span class="kbd">9</span></li>
+              <li>Record an ad straight from your mic</li>
+            </ul>
+          </div>
+          <div class="shot-img">
+            <svg viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Game DJ soundboard: categories on the left, colour-coded sound pads with hotkeys on the right">
+              <rect x="0" y="0" width="560" height="350" rx="16" fill="#141824" stroke="rgba(255,255,255,0.1)"/>
+              <circle cx="22" cy="20" r="4.5" fill="#ff5f57"/><circle cx="38" cy="20" r="4.5" fill="#febc2e"/><circle cx="54" cy="20" r="4.5" fill="#28c840"/>
+              <line x1="0" y1="40" x2="560" y2="40" stroke="rgba(255,255,255,0.08)"/>
+              <!-- sidebar -->
+              <rect x="0" y="40" width="132" height="310" fill="#0e1119"/>
+              <line x1="132" y1="40" x2="132" y2="350" stroke="rgba(255,255,255,0.08)"/>
+              <g font-family="Inter, sans-serif" font-size="11.5" fill="#98a2b5">
+                <rect x="10" y="54" width="112" height="28" rx="7" fill="rgba(79,140,255,0.14)" stroke="rgba(79,140,255,0.35)"/>
+                <text x="22" y="72" fill="#eef1f6" font-weight="600">Goals</text>
+                <text x="22" y="102">Intros</text>
+                <text x="22" y="130">Breaks</text>
+                <text x="22" y="158">Ads</text>
+                <text x="22" y="186">Warm-up</text>
+              </g>
+              <rect x="10" y="300" width="112" height="30" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+              <text x="66" y="320" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" fill="#98a2b5">+ Import audio</text>
+              <!-- pads -->
+              <g font-family="Space Grotesk, sans-serif" font-weight="700" font-size="12.5" fill="#fff">
+                <rect x="148" y="56" width="126" height="74" rx="11" fill="url(#pCoral)"/><text x="160" y="118">Goal horn</text>
+                <rect x="286" y="56" width="126" height="74" rx="11" fill="url(#pBlue)"/><text x="298" y="118">Air raid</text>
+                <rect x="424" y="56" width="122" height="74" rx="11" fill="url(#pGreen)"/><text x="436" y="118">Chant</text>
+                <rect x="148" y="142" width="126" height="74" rx="11" fill="url(#pPurple)"/><text x="160" y="204">Line-up</text>
+                <rect x="286" y="142" width="126" height="74" rx="11" fill="url(#pAmber)"/><text x="298" y="204">Penalty</text>
+                <rect x="424" y="142" width="122" height="74" rx="11" fill="url(#pTeal)"/><text x="436" y="204">Timeout</text>
+              </g>
+              <g font-family="Inter, sans-serif" font-size="9.5" font-weight="600" fill="rgba(255,255,255,0.8)">
+                <text x="160" y="74">1</text><text x="298" y="74">2</text><text x="436" y="74">3</text>
+                <text x="160" y="160">4</text><text x="298" y="160">5</text><text x="436" y="160">6</text>
+              </g>
+              <!-- transport -->
+              <rect x="148" y="234" width="398" height="96" rx="11" fill="#0e1119" stroke="rgba(255,255,255,0.08)"/>
+              <text x="164" y="256" font-family="Inter, sans-serif" font-size="11" fill="#98a2b5">Goal horn — cue 0:00.4 → 0:03.1</text>
+              <polyline points="164,296 178,284 190,306 202,278 214,310 226,290 238,300 250,280 262,306 274,288 286,302 298,282 310,308 322,290 334,300 346,278 358,310 370,292 382,300 394,284 406,304 418,292 430,298 442,286 454,302 466,290 478,300 490,288"
+                fill="none" stroke="url(#pGreen)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="176" y="266" width="2" height="52" fill="#2fd07a" opacity="0.55"/>
+              <rect x="450" y="266" width="2" height="52" fill="#ff6b4a" opacity="0.55"/>
+              <circle cx="516" cy="292" r="17" fill="url(#pGreen)"/>
+              <path d="M511 284l12 8-12 8z" fill="#04140b"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="shot">
+          <div class="shot-text">
+            <div class="shot-eyebrow gradient-text">The timeline</div>
+            <h3>Script the night in advance</h3>
+            <p>Lay out the warm-up, the line-ups and the sponsor reads in the order they happen. Hit one key to move to the next clip and Game DJ crossfades it in. The clock above each clip tells you when it will actually play.</p>
+            <ul>
+              <li>Drag sounds in from any category</li>
+              <li>Smooth crossfades between clips</li>
+              <li>Predicted wall-clock times that follow the real start</li>
+              <li>Live playhead so you always know where you are</li>
+            </ul>
+          </div>
+          <div class="shot-img">
+            <svg viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Game DJ timeline: audio clips laid end to end with predicted clock times and a live playhead">
+              <rect x="0" y="0" width="560" height="350" rx="16" fill="#141824" stroke="rgba(255,255,255,0.1)"/>
+              <circle cx="22" cy="20" r="4.5" fill="#ff5f57"/><circle cx="38" cy="20" r="4.5" fill="#febc2e"/><circle cx="54" cy="20" r="4.5" fill="#28c840"/>
+              <line x1="0" y1="40" x2="560" y2="40" stroke="rgba(255,255,255,0.08)"/>
+              <text x="24" y="68" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700" fill="#eef1f6">Timeline</text>
+              <rect x="440" y="54" width="96" height="26" rx="7" fill="url(#pGreen)"/>
+              <text x="488" y="71" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" font-weight="600" fill="#04140b">▶ Next clip</text>
+
+              <!-- relative times -->
+              <g font-family="ui-monospace, Menlo, monospace" font-size="9.5" fill="#6f7889">
+                <text x="24" y="104">0:00</text><text x="150" y="104">3:20</text><text x="252" y="104">4:35</text><text x="360" y="104">6:10</text><text x="470" y="104">7:05</text>
+              </g>
+              <!-- clips -->
+              <rect x="24" y="112" width="120" height="56" rx="9" fill="url(#pTeal)" opacity="0.35" stroke="#19c5d6"/>
+              <text x="34" y="145" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#cdeef3">Warm-up mix</text>
+              <rect x="150" y="112" width="96" height="56" rx="9" fill="url(#pGreen)" stroke="#2fd07a" stroke-width="2"/>
+              <text x="160" y="145" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#04140b">Line-ups</text>
+              <rect x="252" y="112" width="102" height="56" rx="9" fill="url(#pPurple)" opacity="0.35" stroke="#a855f7"/>
+              <text x="262" y="145" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#e5d3ff">Sponsor</text>
+              <rect x="360" y="112" width="104" height="56" rx="9" fill="url(#pAmber)" opacity="0.35" stroke="#ffb020"/>
+              <text x="370" y="145" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#ffe1ac">Anthem</text>
+              <rect x="470" y="112" width="66" height="56" rx="9" fill="url(#pCoral)" opacity="0.35" stroke="#ff6b4a"/>
+              <text x="480" y="145" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#ffd2c6">Intro</text>
+              <!-- playhead -->
+              <rect x="196" y="106" width="2.5" height="68" fill="#fff"/>
+              <path d="M191 100h11l-5.5 7z" fill="#fff"/>
+              <!-- clock row -->
+              <g font-family="ui-monospace, Menlo, monospace" font-size="9.5" fill="#6f7889">
+                <text x="24" y="186">18:00</text><text x="150" y="186">18:03</text><text x="252" y="186">18:04</text><text x="360" y="186">18:06</text><text x="470" y="186">18:07</text>
+              </g>
+              <line x1="24" y1="196" x2="536" y2="196" stroke="rgba(255,255,255,0.08)"/>
+
+              <!-- now playing -->
+              <rect x="24" y="212" width="512" height="118" rx="11" fill="#0e1119" stroke="rgba(255,255,255,0.08)"/>
+              <text x="40" y="238" font-family="Inter, sans-serif" font-size="10.5" fill="#6f7889">NOW PLAYING</text>
+              <text x="40" y="260" font-family="Space Grotesk, sans-serif" font-size="15" font-weight="700" fill="#eef1f6">Line-ups</text>
+              <text x="40" y="280" font-family="ui-monospace, Menlo, monospace" font-size="10.5" fill="#98a2b5">1:12 / 1:15  ·  crossfade 3.0 s</text>
+              <rect x="40" y="296" width="440" height="5" rx="2.5" fill="rgba(255,255,255,0.1)"/>
+              <rect x="40" y="296" width="352" height="5" rx="2.5" fill="url(#pGreen)"/>
+              <circle cx="508" cy="270" r="18" fill="url(#pGreen)"/>
+              <rect x="502" y="263" width="4.5" height="14" rx="1.5" fill="#04140b"/>
+              <rect x="510" y="263" width="4.5" height="14" rx="1.5" fill="#04140b"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="shot">
+          <div class="shot-text">
+            <div class="shot-eyebrow gradient-text">The announcer</div>
+            <h3>Goal announcements that read themselves</h3>
+            <p>Import both rosters from an Excel file, type the scorer's number, and Game DJ speaks the whole announcement — name, assist and the new score — in Finnish or English. Got the scorer wrong? Fix the event and it announces the correction.</p>
+            <ul>
+              <li>Floorball, ice hockey and football, each with its own wording</li>
+              <li>Rosters straight from Excel — no retyping</li>
+              <li>Every sentence is a template you can rewrite</li>
+              <li>Export the match events back to Excel</li>
+            </ul>
+          </div>
+          <div class="shot-img">
+            <svg viewBox="0 0 560 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Game DJ announcement panel: score, goal entry form, announce button and the event log">
+              <rect x="0" y="0" width="560" height="350" rx="16" fill="#141824" stroke="rgba(255,255,255,0.1)"/>
+              <circle cx="22" cy="20" r="4.5" fill="#ff5f57"/><circle cx="38" cy="20" r="4.5" fill="#febc2e"/><circle cx="54" cy="20" r="4.5" fill="#28c840"/>
+              <line x1="0" y1="40" x2="560" y2="40" stroke="rgba(255,255,255,0.08)"/>
+              <text x="24" y="68" font-family="Space Grotesk, sans-serif" font-size="14" font-weight="700" fill="#eef1f6">📣 Match announcements</text>
+
+              <!-- scoreboard -->
+              <rect x="24" y="84" width="512" height="62" rx="11" fill="#0e1119" stroke="rgba(255,255,255,0.08)"/>
+              <text x="120" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" font-weight="600" fill="#eef1f6">SB Pro</text>
+              <text x="120" y="132" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#6f7889">HOME</text>
+              <text x="280" y="126" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-size="30" font-weight="700" fill="#eef1f6">3 – 2</text>
+              <text x="440" y="114" text-anchor="middle" font-family="Inter, sans-serif" font-size="12.5" font-weight="600" fill="#eef1f6">FoSu</text>
+              <text x="440" y="132" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#6f7889">AWAY</text>
+
+              <!-- form -->
+              <g font-family="Inter, sans-serif" font-size="9.5" fill="#6f7889">
+                <text x="24" y="172">TIME</text><text x="124" y="172">TEAM</text><text x="248" y="172">SCORER</text><text x="368" y="172">ASSIST</text>
+              </g>
+              <rect x="24" y="180" width="88" height="30" rx="7" fill="#20242e" stroke="rgba(255,255,255,0.14)"/>
+              <text x="38" y="200" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#eef1f6">12:34</text>
+              <rect x="124" y="180" width="112" height="30" rx="7" fill="#20242e" stroke="rgba(255,255,255,0.14)"/>
+              <text x="138" y="200" font-family="Inter, sans-serif" font-size="11.5" fill="#eef1f6">SB Pro ▾</text>
+              <rect x="248" y="180" width="108" height="30" rx="7" fill="#20242e" stroke="rgba(79,140,255,0.5)"/>
+              <text x="262" y="200" font-family="Inter, sans-serif" font-size="11.5" fill="#eef1f6">#14 Virtanen</text>
+              <rect x="368" y="180" width="80" height="30" rx="7" fill="#20242e" stroke="rgba(255,255,255,0.14)"/>
+              <text x="382" y="200" font-family="Inter, sans-serif" font-size="11.5" fill="#eef1f6">#7</text>
+              <rect x="460" y="180" width="76" height="30" rx="7" fill="url(#pCoral)"/>
+              <text x="498" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" font-weight="700" fill="#fff">Announce</text>
+
+              <!-- spoken preview -->
+              <rect x="24" y="224" width="512" height="38" rx="9" fill="rgba(47,208,122,0.08)" stroke="rgba(47,208,122,0.3)"/>
+              <g transform="translate(40, 236)">
+                <rect x="0" y="4" width="2.5" height="7" rx="1" fill="#2fd07a"/><rect x="5" y="1" width="2.5" height="13" rx="1" fill="#2fd07a"/>
+                <rect x="10" y="5" width="2.5" height="5" rx="1" fill="#2fd07a"/><rect x="15" y="0" width="2.5" height="15" rx="1" fill="#2fd07a"/>
+                <rect x="20" y="3" width="2.5" height="9" rx="1" fill="#2fd07a"/>
+              </g>
+              <text x="76" y="248" font-family="Inter, sans-serif" font-size="11.5" fill="#a9e9c6">“SB Pro goal, scored by number 14, Virtanen. Assist number 7. Score 3–2.”</text>
+
+              <!-- event log -->
+              <text x="24" y="288" font-family="Inter, sans-serif" font-size="9.5" fill="#6f7889">MATCH EVENTS</text>
+              <rect x="24" y="296" width="512" height="1" fill="rgba(255,255,255,0.08)"/>
+              <g font-family="Inter, sans-serif" font-size="11" fill="#c6cdda">
+                <text x="24" y="314">12:34</text><text x="76" y="314">SB Pro</text><text x="150" y="314" fill="#eef1f6">Goal #14 (#7)</text><text x="300" y="314" fill="#6f7889">3–2</text>
+                <text x="24" y="334">08:12</text><text x="76" y="334">FoSu</text><text x="150" y="334" fill="#eef1f6">Penalty #9 · 2 min</text><text x="300" y="334" fill="#6f7889">2–2</text>
+              </g>
+              <rect x="440" y="302" width="96" height="24" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+              <text x="488" y="318" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#98a2b5">⭳ Export Excel</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="band">
     <div class="wrap">
       <div class="section-head">
         <h2>Everything you need on game day</h2>
@@ -87,18 +297,18 @@
       <div class="features">
         <div class="feature">
           <div class="ico coral"><svg viewBox="0 0 24 24" fill="none"><path d="M3 10v4h4l5 5V5L7 10H3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M16 9a3 3 0 010 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h3>Local audio</h3>
-          <p>Import your own MP3/WAV files, set cue points at the start and end, and fire them instantly with hotkeys.</p>
-        </div>
-        <div class="feature">
-          <div class="ico green"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M7.5 10.5c3-1 6.5-.6 9 1M8 13.5c2.4-.7 5-.4 7 .9M8.5 16c1.8-.5 3.7-.3 5.2.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
-          <h3>Spotify control</h3>
-          <p>Play background music and playlists straight from Spotify — no extra device or mixer needed.</p>
+          <h3>20 stadium sounds included</h3>
+          <p>Goal horns, buzzers, whistles, fanfares, crowd cheers. They ship inside the app and they're ours to give — no download hunt, no licence to clear.</p>
         </div>
         <div class="feature">
           <div class="ico blue"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M7 10h.01M11 10h.01M15 10h.01M8 14h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h3>Hotkeys</h3>
-          <p>Bind every sound to its own key — the goal horn blasts the very second the puck crosses the line.</p>
+          <h3>Your sounds, one key away</h3>
+          <p>Add your own MP3 and WAV files, trim them with cue points, and bind each to a number key so it fires the instant you press it.</p>
+        </div>
+        <div class="feature">
+          <div class="ico green"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M7.5 10.5c3-1 6.5-.6 9 1M8 13.5c2.4-.7 5-.4 7 .9M8.5 16c1.8-.5 3.7-.3 5.2.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div>
+          <h3>Spotify &amp; Apple Music</h3>
+          <p>Run the background music from the streaming app you already pay for. Spotify needs no login at all — Game DJ just drives the app that's already open.</p>
         </div>
         <div class="feature">
           <div class="ico purple"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="8" cy="7" r="2" fill="#141824" stroke="currentColor" stroke-width="2"/><circle cx="15" cy="12" r="2" fill="#141824" stroke="currentColor" stroke-width="2"/><circle cx="10" cy="17" r="2" fill="#141824" stroke="currentColor" stroke-width="2"/></svg></div>
@@ -107,8 +317,8 @@
         </div>
         <div class="feature">
           <div class="ico amber"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="3" width="6" height="12" rx="3" stroke="currentColor" stroke-width="2"/><path d="M5 11a7 7 0 0014 0M12 18v3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h3>Announcements (TTS)</h3>
-          <p>Automated goal and event announcements as spoken audio — rosters import straight from Excel.</p>
+          <h3>Announcements that speak</h3>
+          <p>Goals, penalties and cards read aloud in Finnish or English. Rosters come in from Excel, and every sentence is a template you can rewrite.</p>
         </div>
         <div class="feature">
           <div class="ico teal"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0M12 19h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
@@ -119,6 +329,32 @@
     </div>
   </section>
 
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Up and running before the warm-up ends</h2>
+        <p>No setup project. Install it, drop in your sounds, go.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Install and open</h3>
+          <p>Download, drag it to Applications, and start the 14-day trial. No account, no card.</p>
+        </div>
+        <div class="step">
+          <h3>Add sounds</h3>
+          <p>Start from the 20 sounds already in the app, or bring your own. Set cue points, pick a hotkey.</p>
+        </div>
+        <div class="step">
+          <h3>Run the game</h3>
+          <p>Fire pads live, follow the timeline, and let the announcer read the goals. Keep it if it works.</p>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:34px;">
+        <a href="docs.html" class="btn">Read the full guide</a>
+      </p>
+    </div>
+  </section>
+
   <section class="band">
     <div class="wrap">
       <div class="section-head">
@@ -126,16 +362,54 @@
         <p>No hidden fees. Cancel anytime.</p>
       </div>
       <div class="price-card">
-        <div class="price-badge">14-day money-back guarantee</div>
+        <div class="price-badge">14-day free trial</div>
         <div class="amount">€5<small> / month</small></div>
         <ul>
           <li>All features unlocked</li>
-          <li>macOS and Windows</li>
+          <li>Try it free for 14 days first</li>
           <li>Automatic updates</li>
           <li>Cancel whenever you want</li>
         </ul>
-        <a href="pricing.html" class="btn btn-primary" style="width:100%; justify-content:center;">Start with Game DJ</a>
+        <a href="download.html" class="btn btn-primary" style="width:100%; justify-content:center;">Start the free trial</a>
         <p class="price-note">Billing handled securely by Paddle. VAT included.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Questions, answered</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Can I try it before paying?</summary>
+          <div class="faq-a">Yes. Every download includes a 14-day trial with all features unlocked. No card, no account — just install it and go. When the trial ends you subscribe from inside the app.</div>
+        </details>
+        <details>
+          <summary>Which sports does it cover?</summary>
+          <div class="faq-a">Floorball, ice hockey and football each have their own event types and announcement wording. The soundboard and timeline are sport-agnostic, so plenty of people use Game DJ for events that aren't in that list at all.</div>
+        </details>
+        <details>
+          <summary>Does it need an internet connection?</summary>
+          <div class="faq-a">Not for the part that matters. Local sounds, cue points, hotkeys and the timeline all run entirely on your machine, so a dead arena Wi-Fi can't take your goal horn down. Spotify and generating new spoken announcements do need a connection — announcements you generated earlier are saved as normal audio files and keep working offline.</div>
+        </details>
+        <details>
+          <summary>Do I need Spotify Premium?</summary>
+          <div class="faq-a">Only if you want the Spotify feature — everything else works without it. There's nothing to set up: Game DJ drives the Spotify app already open on your machine, with no login and no developer keys. Spotify itself only allows that remote control on Premium accounts. On a Mac you also get Apple Music the same way, if you have a subscription.</div>
+        </details>
+        <details>
+          <summary>Does the subscription cover music licensing?</summary>
+          <div class="faq-a">No — and no software can. Public performance of music at an event needs the appropriate licences (in Finland, Teosto and Gramex). That stays the organiser's responsibility. Game DJ plays the audio; it doesn't grant rights to it.</div>
+        </details>
+        <details>
+          <summary>What do I need to run it?</summary>
+          <div class="faq-a">A Mac with Apple Silicon (M1 or newer) running macOS 11 or later. A Windows version is in the works. See the <a href="download.html">download page</a> for the current state.</div>
+        </details>
+        <details>
+          <summary>How do I cancel?</summary>
+          <div class="faq-a">Any time, from the receipt email Paddle sent you or by emailing <a href="mailto:gamedj@waveric.fi">gamedj@waveric.fi</a>. You keep access until the end of the period you already paid for. There's also a 14-day money-back guarantee on your first payment.</div>
+        </details>
       </div>
     </div>
   </section>
@@ -144,7 +418,7 @@
     <div class="wrap">
       <h2>Ready to run the show?</h2>
       <p>Join the DJs who make every game sound bigger.</p>
-      <a href="pricing.html" class="btn btn-primary btn-lg">Get Game DJ — €5/mo</a>
+      <a href="download.html" class="btn btn-primary btn-lg">Try Game DJ free for 14 days</a>
     </div>
   </section>
 </main>
@@ -153,6 +427,8 @@
   <div class="wrap footer-inner">
     <div>© 2026 Waver Corp Oy · <a href="mailto:gamedj@waveric.fi">gamedj@waveric.fi</a></div>
     <div class="footer-links">
+      <a href="download.html">Download</a>
+      <a href="docs.html">Guide</a>
       <a href="pricing.html">Pricing</a>
       <a href="terms.html">Terms</a>
       <a href="privacy.html">Privacy</a>

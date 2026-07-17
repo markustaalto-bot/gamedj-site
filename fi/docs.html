@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ohjeet — Game DJ</title>
+<meta name="description" content="Näin Game DJ toimii: äänet ja pikanäppäimet, aikajana, Spotify ja Apple Music, automaattiset ottelukuulutukset sekä lisensointi.">
+<link rel="canonical" href="https://gamedj.net/fi/docs.html">
+<link rel="alternate" hreflang="en" href="https://gamedj.net/docs.html">
+<link rel="alternate" hreflang="fi" href="https://gamedj.net/fi/docs.html">
+<link rel="alternate" hreflang="x-default" href="https://gamedj.net/docs.html">
+<script src="../lang.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo">
+      <span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5v14M16 5v14M8 9h8M8 15h8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></span>
+      Game DJ
+    </a>
+    <nav class="nav-links">
+      <a href="index.html#tour" class="hide-sm">Ominaisuudet</a>
+      <a href="docs.html" class="hide-sm">Ohjeet</a>
+      <a href="pricing.html">Hinta</a>
+      <span class="lang-switch"><a data-lang="en" href="/docs.html">EN</a><a data-lang="fi" href="/fi/docs.html">FI</a></span>
+      <a href="download.html" class="btn btn-primary" style="padding:9px 18px;">Lataa</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap docs-layout">
+  <aside class="docs-nav">
+    <strong>Ohjeet</strong>
+    <a href="#install">Asennus ja ensikäynnistys</a>
+    <a href="#licence">Kokeilu ja lisenssi</a>
+    <a href="#sounds">Kategoriat ja äänet</a>
+    <a href="#editing">Cue-pisteet, fadet, näppäimet</a>
+    <a href="#voice">Nauhoitus ja spiikit</a>
+    <a href="#streaming">Spotify ja Apple Music</a>
+    <a href="#timeline">Aikajana</a>
+    <a href="#announcing">Ottelun kuulutukset</a>
+    <a href="#profiles">Profiilit</a>
+    <a href="#settings">Asetukset</a>
+    <a href="#updates">Päivitykset</a>
+    <a href="#help">Ongelmatilanteet</a>
+  </aside>
+
+  <div class="docs-body">
+    <h1 style="font-size:38px; margin-bottom:10px;">Game DJ -ohjeet</h1>
+    <p class="lede">Kaikki mitä sovellus tekee, siinä järjestyksessä kuin kohtaat ne. Jos on kiire: asenna, avaa kategoria, lisää muutama vakioääni, anna niille pikanäppäimet — ja olet valmis otteluun.</p>
+
+    <h2 id="install">Asennus ja ensikäynnistys</h2>
+    <p>Avaa lataamasi .dmg ja raahaa <strong>Game DJ</strong> Ohjelmat-kansioon. Sovellus on Applen allekirjoittama ja notarisoima, joten se aukeaa normaalisti — ei turvavaroituksia klikattavaksi.</p>
+    <p>Ensimmäisellä käynnistyksellä saat oletusprofiilin, jossa on muutama tyhjä kategoria. Mitään ei ole lukossa: 14 päivän kokeilussa on kaikki ominaisuudet päällä.</p>
+    <div class="note">
+      <p><strong>Yksi asia kannattaa tehdä heti:</strong> avaa kategoria, valitse <em>+ Tuo ääni → Vakioäänet</em> ja lisää maalitorvi ja summeri. Sinulla on nyt toimiva soundboard, ennen kuin olet tuonut ainuttakaan omaa tiedostoa.</p>
+    </div>
+
+    <h2 id="licence">Kokeilu ja lisenssi</h2>
+    <p>Kokeilu kestää <strong>14 päivää</strong> ensimmäisestä käynnistyksestä. Vasemmassa alakulmassa näkyy banneri <em>Kokeilu — N päivää jäljellä</em>. Tiliä tai korttia ei tarvita.</p>
+    <h3>Tilaaminen</h3>
+    <p>Paina <strong>Osta lisenssi</strong> kokeilubannerissa tai aktivointi-ikkunassa. Selaimeesi aukeaa turvallinen Paddle-kassa. Kun maksu menee läpi, sovellus poimii lisenssin ja aktivoi itsensä — mitään ei tarvitse kopioida tai liittää.</p>
+    <h3>Saamasi avaimen aktivointi</h3>
+    <p>Jos sait avaimen suoraan (esimerkiksi pilotti- tai demolisenssin), paina <strong>Aktivoi</strong> ja liitä koko avain kenttään. Avaimet ovat pitkiä — varmista että kopioit sen kokonaan, sillä katkennut avain tulkitaan kelvottomaksi.</p>
+    <h3>Miten lisensointi käyttäytyy</h3>
+    <ul>
+      <li><strong>Se toimii ilman nettiä.</strong> Lisenssi tarkistetaan omalla koneellasi, joten kaatunut verkko ei lukitse sinua ulos kesken ottelun.</li>
+      <li><strong>Laiteraja.</strong> Kukin avain kattaa tietyn määrän koneita. Sen jälkeen aktivointi kieltäytyy viestillä <em>avain on jo käytössä liian monella laitteella</em> — laita viestiä, niin nollaamme sen.</li>
+      <li><strong>Peruminen.</strong> Käyttöoikeus jatkuu sen jakson loppuun, jonka olet jo maksanut.</li>
+    </ul>
+
+    <h2 id="sounds">Kategoriat ja äänet</h2>
+    <p>Kaikki elää kategorioissa — <em>Maalit</em>, <em>Introt</em>, <em>Mainokset</em>, miten sinulle sopii. Lisää kategoria yläpalkin <strong>+ Kategoria</strong> -napista. Järjestystä muutat raahaamalla kategoriaa sen kahvasta.</p>
+    <p>Kategorian sisällä <strong>+ Tuo ääni</strong> avaa kuusi tapaa saada ääntä sisään:</p>
+    <ul>
+      <li><strong>Tiedostot koneelta</strong> — valitse yksittäisiä MP3/WAV-tiedostoja.</li>
+      <li><strong>Kansio koneelta</strong> — tuo koko kansion sisältö kerralla.</li>
+      <li><strong>Vakioäänet</strong> — 20 sisäänrakennettua stadionääntä.</li>
+      <li><strong>Spotifysta</strong> — katso <a href="#streaming">Spotify ja Apple Music</a>.</li>
+      <li><strong>Tallenna ääntä</strong> — nauhoita mainos mikrofonilla.</li>
+      <li><strong>Kirjoita spiikki</strong> — kirjoita lause ja anna sen puhua.</li>
+    </ul>
+
+    <h3>Ne 20 vakioääntä</h3>
+    <p>Game DJ syntetisoi omat stadionäänensä, joten ne tulevat sovelluksen mukana eikä niihin liity kolmannen osapuolen lisenssiä. Esikuuntele kutakin <strong>▶</strong>-napista ja <strong>Lisää</strong> haluamasi, tai ota koko satsi napista <strong>Lisää kaikki</strong>.</p>
+    <p>Pelisummeri · Lyhyt summeri · Ilmatorvi · Ilmatorvi ×3 · Maalitorvi · Bassotorvi · Tuomarin pilli · Pilli ×3 · Lähtölaskenta 3-2-1 · Aloituskello · Sireeni · Charge! · Fanfaari · Voittofanfaari · Rummunpärinä + symbaali · Symbaali-isku · Yleisön hurraus · Aplodit · Buuaus · Töminä-taputus</p>
+
+    <h3>Yläpalkki</h3>
+    <ul>
+      <li><span class="kbd">Esc</span> — <strong>Stop</strong> pysäyttää sen mikä soi.</li>
+      <li><span class="kbd">Väli</span> — <strong>Fade</strong> häivyttää ulos tai jatkaa fadella.</li>
+      <li><strong>↺ Nollaa</strong> — merkitsee kaikki biisit taas soittamattomiksi. Käytä otteluiden välissä, niin näet yhdellä silmäyksellä mitä olet jo käyttänyt.</li>
+      <li><strong>Vol</strong> — päääänenvoimakkuus.</li>
+    </ul>
+
+    <h2 id="editing">Cue-pisteet, fadet ja pikanäppäimet</h2>
+    <p>Paina <strong>Muokkaa</strong> minkä tahansa biisin kohdalla, niin sen editori aukeaa. Täällä karkeasta tiedostosta tulee tiukka cue.</p>
+    <ul>
+      <li><strong>Aloitus</strong> ja <strong>Lopetus</strong> (<code>m:ss.d</code>) — leikkaa hiljaisuus alusta pois, niin torvi osuu heti kun painat näppäintä. Jätä Lopetus tyhjäksi, niin biisi soi loppuun.</li>
+      <li><strong>Aseta nykyisestä soittokohdasta</strong> — soita biisiä, ja kun kuulet oikean kohdan, paina tätä numeroiden arvailun sijaan.</li>
+      <li><strong>Fade sisään</strong> / <strong>Fade ulos</strong> — sekunteina.</li>
+      <li><strong>Biisin päättyessä</strong> — <em>Soita uudestaan</em> (luuppaa, hyvä lämmittelymatoille), <em>Siirry seuraavaan</em> tai <em>Pysähdy</em>.</li>
+      <li><strong>Pikanäppäin</strong> — paina numeroa <span class="kbd">1</span>–<span class="kbd">9</span>. Se näppäin laukaisee tämän äänen mistä tahansa sovelluksessa.</li>
+      <li><strong>Kuva</strong> — anna padille kuva, niin löydät sen silmällä etkä lukemalla.</li>
+    </ul>
+    <div class="note">
+      <p><strong>Yhdeksän pikanäppäintä, ei yhdeksän ääntä.</strong> Pikanäppäimet ovat niitä joihin pitää osua katsomatta — maalitorvi, summeri, pilli. Kaiken muun klikkaat, eikä niiden määrää ole rajoitettu.</p>
+    </div>
+
+    <h2 id="voice">Nauhoitus ja spiikit</h2>
+    <h3>Tallenna ääntä</h3>
+    <p>Nauhoittaa mainoksen tai kuulutuksen suoraan mikrofonilta ja tallentaa sen kategoriaan tavallisena biisinä — cue-pisteet, fadet ja pikanäppäimet pätevät kaikki. Ensimmäisellä kerralla macOS kysyy lupaa mikrofonin käyttöön.</p>
+    <h3>Kirjoita spiikki</h3>
+    <p>Kirjoita mitä kuuluttajan pitäisi sanoa, valitse kieli (suomi tai englanti) ja ääni (nainen tai mies) ja <strong>▶ Esikuuntele</strong>. Tyytyväinen? <strong>Tallenna kategoriaan</strong>. Siitä tulee tavallinen äänitiedosto, mikä tarkoittaa että se toimii myöhemmin ilman verkkoakin.</p>
+    <div class="note warn">
+      <p><strong>Puheen luonti vaatii yhteyden</strong>, koska ääni syntetisoidaan verkossa. Tee mainosspiikit ennen kuin lähdet halliin, niin et huomaa asiaa koskaan. Kaikki jo luotu soi ilman nettiä kuten mikä tahansa tiedosto.</p>
+    </div>
+
+    <h2 id="streaming">Spotify ja Apple Music</h2>
+    <p>Yläpalkin <strong>Suoratoisto</strong> avaa paneelin. Game DJ ei suoratoista itse mitään — se ohjaa koneellasi jo pyörivää sovellusta, joten taustamusiikki tulee siitä tilauksesta josta jo maksat.</p>
+
+    <p>Spotifylla on kaksi tilaa, jotka valitaan paneelin yläreunasta.</p>
+
+    <h3>Normaali tila</h3>
+    <p>Oletus, eikä siinä ole mitään säädettävää. Pidä Spotifyn työpöytäsovellus auki ja kirjautuneena, niin Game DJ ohjaa sitä suoraan. Lisää biisejä liittämällä Spotify-linkki (<code>open.spotify.com/track/…</code>); nimi ja kansikuva tulevat mukana automaattisesti.</p>
+    <ul>
+      <li><strong>Premium vaaditaan</strong> — Spotify sallii tämän etäohjauksen vain Premium-tileillä.</li>
+      <li><strong>Windowsilla</strong> normaali tila osaa vain käynnistää biisin: ei taukoa, kelausta eikä äänenvoimakkuutta Game DJ:stä. Täysi ohjaus toimii Macilla.</li>
+      <li><strong>Soittolistat</strong> lisätään yhtenä taustapadina, ei yksittäisinä biiseinä. Spotify ei anna sovelluksen listata soittolistan sisältöä, joten koko lista soi yhtenä möykkynä. Yksittäiset biisit saat liittämällä niiden linkit.</li>
+      <li><strong>Ei hakua</strong> — biisit lisätään linkillä. Jos haluat haun, käytä kehittäjätilaa.</li>
+    </ul>
+
+    <h3>Spotify kehittäjätila</h3>
+    <p>Vaihtoehto niille, jotka mieluummin <strong>hakevat biisejä Game DJ:n sisällä</strong> kuin liittävät linkkejä. Se maksaa kertaluontoisen säädön: luo oma sovellus Spotifyn kehittäjäportaalissa, rekisteröi redirect-osoitteeksi tasan <code>http://127.0.0.1:8888/callback</code>, liitä sitten Client ID Game DJ:hin ja kirjaudu kerran.</p>
+    <p>Useimmat eivät tarvitse tätä koskaan. Normaali tila hoitaa saman homman, kunhan sinulla on linkit.</p>
+
+    <h3>Apple Music (vain Mac)</h3>
+    <p>Sama idea: Game DJ ohjaa Macisi Music-sovellusta. Koukku on siinä, että Apple sallii vain <strong>omassa kirjastossasi</strong> olevien biisien toiston — ei mielivaltaisia katalogilinkkejä. Lisää siis haluamasi biisit ensin Musicissa (<em>+ Lisää</em>), ja hae ne sitten Game DJ:ssä. macOS kysyy kerran lupaa hallita Musicia; vastaa kyllä. Apple Music -tilaus vaaditaan, eikä tämä toimi Windowsilla.</p>
+
+    <div class="note warn">
+      <p><strong>Suoratoisto on se ainoa osa joka tarvitsee verkkoa.</strong> Paikalliset äänet — maalitorvi mukaan lukien — eivät koskaan. Jos hallin Wi-Fi kuolee, menetät taustamusiikin, et ottelua.</p>
+    </div>
+
+    <h2 id="timeline">Aikajana</h2>
+    <p>Aikajana on kategorioiden alla ja pitää sisällään ajojärjestyksen: lämmittely, kokoonpanot, mainosspiikit, hymni. Raahaa ääniä siihen mistä tahansa kategoriasta — se kopioi ne, joten alkuperäinen padi pysyy paikallaan.</p>
+    <ul>
+      <li><strong>▶ Käynnistä</strong> aloittaa sarjan; <strong>⏭ Siirry seuraavaan</strong> vaihtaa ristiinhäivytyksellä; <strong>⏮ Siirry alkuun</strong> kelaa takaisin; <strong>Tyhjennä</strong> tyhjentää sen.</li>
+      <li><strong>Klikkaa</strong> aikajanaa mistä tahansa asettaaksesi aloituskohdan.</li>
+      <li><strong>Ctrl + rulla</strong> zoomaa; <strong>keskipainike</strong> panoroi.</li>
+      <li>Klipin leveys vastaa kestoa, joten näkymä on todellinen kuva siitä paljonko mikäkin vie aikaa.</li>
+    </ul>
+    <p>Klipin yläpuolella on sen kohta sarjassa, alapuolella <strong>ennustettu kellonaika</strong>. Ennuste ankkuroituu siihen milloin soiva klippi oikeasti alkoi — eli jos aloitat lämmittelyn neljä minuuttia myöhässä, kaikki alla olevat ajat siirtyvät mukana ja pitävät edelleen paikkansa.</p>
+
+    <h2 id="announcing">Ottelun kuulutukset</h2>
+    <p>Yläpalkin <strong>📣 Kuulutus</strong> avaa kuulutuspaneelin. Kirjoita maalintekijän numero, ja Game DJ puhuu koko jutun — nimen, syötön ja uuden tilanteen — suomeksi tai englanniksi.</p>
+
+    <h3>Valitse ensin laji</h3>
+    <p>Laji asetetaan kohdassa <strong>Asetukset → Yleiset</strong>, koska se on aseta-ja-unohda-valinta. Se määrää mitkä tapahtumatyypit saat ja mitä kuulutusmuotoilua käytetään:</p>
+    <ul>
+      <li><strong>Salibandy</strong> ja <strong>jääkiekko</strong> — maali, jäähy, aikalisä.</li>
+      <li><strong>Jalkapallo</strong> — maali, kortti, pelaajavaihto. Ei jäähyjä eikä aikalisiä.</li>
+    </ul>
+    <p>Kullakin lajilla on omat mallinsa, joten salibandyn sanamuotojen viilaaminen ei koske jalkapalloosi lainkaan.</p>
+
+    <h3>Kokoonpanot</h3>
+    <p>Syötä joukkueiden nimet ja täytä kokoonpanot. <strong>⇪ Tuo Excelistä</strong> lukee taulukon, jossa numero ja nimi ovat omissa sarakkeissaan — otsikkorivi käy, tuonti päättelee muodon itse. Etkö ole varma millainen sen pitäisi olla? <strong>⇩ Vie pohja</strong> antaa täytettävän tiedoston. Voit myös naputella pelaajat käsin napista <strong>+ Lisää pelaaja</strong>.</p>
+    <p>Kun kokoonpano on ladattu, kirjoitat enää numeroita: nimet tulevat siitä.</p>
+
+    <h3>Tapahtuman kuuluttaminen</h3>
+    <p>Valitse tapahtumatyyppi, peliaika, joukkue ja pelaajan numero(t), ja paina <strong>📣 Kuuluta</strong>. Tai käytä <strong>Tallenna tapahtuma ilman kuulutusta</strong> kirjatakseen jotain hiljaisesti — kätevää kun hallin kuulutus on muussa käytössä.</p>
+    <p>Tilanne lasketaan tapahtumista itsestään, joten se ei voi ajautua eri tahtiin. <strong>↶ Kumoa viimeinen</strong> poistaa tuoreimman tapahtuman; <strong>Nollaa ottelu</strong> tyhjentää kaiken.</p>
+    <div class="note">
+      <p><strong>Jalkapallossa kuulutetaan täysiä minuutteja.</strong> Syötä 6:30, niin kuulutus puhuu <em>7. minuutista</em> — niin kuin jalkapalloaika oikeasti sanotaan. Salibandy ja jääkiekko kuuluttavat minuutit ja sekunnit.</p>
+    </div>
+
+    <h3>Virheen korjaaminen</h3>
+    <p>Väärä maalintekijä? <strong>Napauta tapahtumaa</strong> listalla muokataksesi sitä. Korjaa numero, niin saat kaksi vaihtoehtoa: <strong>📣 Kuuluta korjaus</strong>, joka lukee ääneen tyyliin <em>”Korjataan SB Pro ensimmäisen maalin tekijäksi numero 14”</em>, tai <strong>Tallenna korjaus ilman kuulutusta</strong> jos yleisön ei tarvitse tietää.</p>
+
+    <h3>Tapahtumien ulos saaminen</h3>
+    <p><strong>⇩ Vie Exceliin</strong> kirjoittaa koko tapahtumalistan — ajan, tyypin, joukkueen, pelaajat, syötöt, jäähyminuutit, kortit, vaihdot — taulukkoon ottelupöytäkirjaa varten.</p>
+
+    <h3>Kuuluttajan sanojen muuttaminen</h3>
+    <p>Jokainen lause on malli, jota muokataan kohdassa <strong>Asetukset → Kuulutukset</strong> lajeittain ja kielittäin. Muuttujat täytetään puhuttaessa: <code>{team}</code>, <code>{time}</code>, <code>{player}</code>, <code>{playerName}</code>, <code>{assist}</code>, <code>{homeScore}</code>, <code>{awayScore}</code> ja muita. Hakasulkeissa <code>[ ]</code> oleva osa jätetään pois kun sen tieto puuttuu — eli <code>[Syöttö numero {assist}.]</code> yksinkertaisesti katoaa syöttämättömästä maalista. <strong>Palauta oletukset</strong> kumoaa kokeilut.</p>
+
+    <h3>Kun nimi äännetään väärin</h3>
+    <p>Seurojen lyhenteet kompastuttavat puhesynteesiä — suomi on erityisen altis sille. Kohdassa <strong>Asetukset → Kuulutus → Ääntämiset</strong> kirjoitat kirjoitusasun vasemmalle ja ääntämyksen oikealle (<em>FoSu</em> → <em>Fosu</em>). Se pätee jokaiseen kuulutukseen ja jokaiseen spiikkiin.</p>
+
+    <h2 id="profiles">Profiilit</h2>
+    <p>Yläpalkin <strong>Profiilit</strong> pitää erilliset setit kategorioita ja biisejä — yksi per joukkue, halli tai tapahtumatyyppi. Vie profiili tiedostoon ja jaa se toiselle käyttäjälle; cue-ajat, fadet ja Spotify-biisit matkaavat mukana.</p>
+    <div class="note warn">
+      <p>Apple Music -biisit ovat poikkeus: ne on sidottu sen tietyn Macin kirjastoon, joten ne eivät selviä matkasta toiselle koneelle. Game DJ kertoo mitkä se ei saanut yhdistettyä, ja lisäät ne siellä Musiciin.</p>
+    </div>
+
+    <h2 id="settings">Asetukset</h2>
+    <p>Yläpalkin <strong>⚙ Asetukset</strong>, kolme välilehteä:</p>
+    <ul>
+      <li><strong>Yleiset</strong> — sovelluksen kieli (suomi/englanti, vaihtuu heti ilman uudelleenkäynnistystä) ja lajisi.</li>
+      <li><strong>Kuulutus</strong> — kuuluttajan asetukset ja ääntämislista.</li>
+      <li><strong>Kuulutukset</strong> — kuulutusmallit lajeittain ja kielittäin.</li>
+    </ul>
+
+    <h2 id="updates">Päivitykset</h2>
+    <p>Game DJ päivittää itsensä. Uusi versio latautuu hiljaa taustalla; banneri tarjoaa uudelleenkäynnistystä, ja päivitys asentuu. Sinun ei koskaan tarvitse metsästää latauslinkkiä tuntia ennen ottelua.</p>
+
+    <h2 id="help">Ongelmatilanteet</h2>
+    <h3>Mikrofoni ei nauhoita</h3>
+    <p>macOS estää mikrofonin käytön kunnes sallit sen: <em>Järjestelmäasetukset → Tietosuoja ja turvallisuus → Mikrofoni</em>, laita Game DJ päälle ja avaa sovellus uudelleen.</p>
+    <h3>Spotify ei reagoi</h3>
+    <p>Tarkista kolme asiaa: Spotifyn työpöytäsovellus on auki ja kirjautuneena, tili on <strong>Premium</strong>, ja — Windowsilla — muista että normaali tila osaa vain käynnistää biisejä, ei pysäyttää tai kelata niitä.</p>
+    <h3>Apple Music ei tee mitään</h3>
+    <p>Ensimmäinen yritys laukaisee macOS:n lupakyselyn (<em>Game DJ haluaa hallita Musicia</em>). Jos hylkäsit sen, salli se uudelleen kohdassa <em>Järjestelmäasetukset → Tietosuoja ja turvallisuus → Automaatio</em>. Tarkista myös että biisi on kirjastossasi — pelkkiä katalogibiisejä ei voi soittaa tällä tavalla.</p>
+    <h3>Kuulutus vääntää nimen väärin</h3>
+    <p>Lisää se kohtaan <strong>Asetukset → Kuulutus → Ääntämiset</strong>, kirjoitusasu vasemmalle ja ääntämys oikealle.</p>
+    <h3>Lisenssiavain ei aktivoidu</h3>
+    <p>Useimmiten kyse on vaillinaisesta kopiosta — avaimet ovat pitkiä, joten ota se kokonaan. Muuten avain voi olla jo liian monella laitteella, tai se on voitu perua. Laita viestiä osoitteeseen <a href="mailto:gamedj@waveric.fi">gamedj@waveric.fi</a>, niin selvitetään.</p>
+    <h3>Ei auta mikään</h3>
+    <p>Kirjoita osoitteeseen <a href="mailto:gamedj@waveric.fi">gamedj@waveric.fi</a>. Kerro mitä olit tekemässä ja mikä versio sinulla on — oikea ihminen lukee viestin.</p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap footer-inner">
+    <div>© 2026 Waver Corp Oy · <a href="mailto:gamedj@waveric.fi">gamedj@waveric.fi</a></div>
+    <div class="footer-links">
+      <a href="download.html">Lataa</a>
+      <a href="docs.html">Ohjeet</a>
+      <a href="pricing.html">Hinta</a>
+      <a href="terms.html">Ehdot</a>
+      <a href="privacy.html">Tietosuoja</a>
+      <a href="refund.html">Palautukset</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* Korosta sivupalkissa se osio jota luetaan. */
+(function () {
+  var links = [].slice.call(document.querySelectorAll('.docs-nav a'))
+  var targets = links
+    .map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)) })
+    .filter(Boolean)
+  if (!targets.length || !window.IntersectionObserver) return
+
+  var visible = {}
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { visible[e.target.id] = e.isIntersecting })
+    var active = null
+    for (var i = 0; i < targets.length; i++) {
+      if (visible[targets[i].id]) { active = targets[i].id; break }
+    }
+    if (!active) return
+    links.forEach(function (a) {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + active)
+    })
+  }, { rootMargin: '-80px 0px -70% 0px' })
+  targets.forEach(function (t) { obs.observe(t) })
+})()
+</script>
+
+</body>
+</html>

@@ -105,6 +105,17 @@ header.nav {
 .board-wrap { position: relative; }
 .board-wrap svg { width: 100%; height: auto; filter: drop-shadow(0 30px 60px rgba(0,0,0,0.5)); }
 
+/* Full match-day interface shot — wider than the text column, scrolls on mobile */
+.app-shot {
+  max-width: 1240px; margin: 0 auto; overflow-x: auto; overflow-y: hidden;
+  border-radius: 16px; -webkit-overflow-scrolling: touch;
+}
+.app-shot svg {
+  display: block; width: 100%; min-width: 900px; height: auto;
+  border-radius: 16px; filter: drop-shadow(0 34px 70px rgba(0,0,0,0.55));
+}
+.app-shot-note { text-align: center; color: var(--muted); font-size: 13.5px; margin-top: 16px; }
+
 /* Sections */
 section { padding: 66px 0; }
 .section-head { text-align: center; max-width: 620px; margin: 0 auto 46px; }

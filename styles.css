@@ -94,7 +94,9 @@ header.nav {
 }
 .badge-pill .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 0 rgba(47,208,122,.6); animation: pulse 2s infinite; }
 @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(47,208,122,.5)} 70%{box-shadow:0 0 0 8px rgba(47,208,122,0)} 100%{box-shadow:0 0 0 0 rgba(47,208,122,0)} }
-.hero h1 { font-size: 58px; line-height: 1.04; margin-bottom: 20px; font-weight: 700; }
+/* 10cqi keeps the longest word (~9.2× font-size wide) inside the column with margin;
+   cap 58px is the design size, floor 24px guards ultra-narrow screens. */
+.hero h1 { font-size: clamp(24px, 10cqi, 58px); line-height: 1.04; margin-bottom: 20px; font-weight: 700; }
 .hero p.lead { font-size: 19px; color: var(--muted); max-width: 520px; margin-bottom: 30px; }
 .cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
 .trust-row { margin-top: 26px; display: flex; gap: 18px; flex-wrap: wrap; color: var(--muted); font-size: 13.5px; }
@@ -334,21 +336,21 @@ footer.site { border-top: 1px solid var(--border); padding: 44px 0; margin-top: 
 .note p:last-child { margin-bottom: 0; }
 .note strong { color: var(--text); }
 
-/* Long Finnish compounds ("urheilutapahtumiin") set a wide min-content floor.
-   Grid columns default to min-width:auto, so that floor overflows the container
-   instead of wrapping — body's overflow-x:hidden then silently clips it.
-   min-width:0 lets the column shrink; overflow-wrap breaks an oversized word only
-   as a last resort. NO hyphens:auto — it inserts hyphens mid-word even when the
-   word would fit ("näppäimen pääs-sä"), which reads as a typo. */
+/* Headings must always show whole words — never split "urheilutapahtumiin"
+   mid-word. overflow-wrap:normal forbids the break (no hyphens either). To keep
+   the longest word from then overflowing, the hero h1 scales to its OWN column
+   width via a container query (cqi) — so it fits whether the column is the full
+   viewport (mobile) or the ~half-width hero column (desktop). min-width:0 lets
+   the grid track shrink so cqi measures the real column width. */
 .hero-grid > * { min-width: 0; }
+.hero-grid > div:first-child { container-type: inline-size; }
 .hero h1, .section-head h2, .cta-final h2, .shot-text h3 {
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
 }
 
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; }
   .board-wrap { order: -1; max-width: 460px; margin: 0 auto; }
-  .hero h1 { font-size: 44px; }
   .nav-links a.hide-sm { display: none; }
   .section-head h2 { font-size: 30px; }
   .nav-links { gap: 14px; }
@@ -370,7 +372,6 @@ footer.site { border-top: 1px solid var(--border); padding: 44px 0; margin-top: 
   .nav-links { gap: 10px; }
   .nav-links .btn { padding: 8px 12px !important; font-size: 13.5px; }
   .lang-switch a { padding: 5px 8px; font-size: 12px; }
-  .hero h1 { font-size: 34px; }
   .hero p.lead { font-size: 17px; }
   .section-head h2, .cta-final h2 { font-size: 25px; }
   .shot-text h3 { font-size: 24px; }

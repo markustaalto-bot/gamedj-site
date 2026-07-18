@@ -65,6 +65,7 @@ header.nav {
   display: inline-flex; align-items: center; justify-content: center;
 }
 .logo .dot svg { width: 15px; height: 15px; }
+.logo .logo-mark { width: 28px; height: 28px; border-radius: 7px; display: block; }
 .nav-links { display: flex; gap: 26px; align-items: center; }
 .nav-links a { color: var(--muted); font-size: 15px; font-weight: 500; }
 .nav-links a:hover { color: var(--text); text-decoration: none; }
@@ -369,6 +370,7 @@ footer.site { border-top: 1px solid var(--border); padding: 44px 0; margin-top: 
 @media (max-width: 480px) {
   .logo { font-size: 17px; }
   .logo .dot { width: 22px; height: 22px; }
+  .logo .logo-mark { width: 24px; height: 24px; }
   .nav-links { gap: 10px; }
   .nav-links .btn { padding: 8px 12px !important; font-size: 13.5px; }
   .lang-switch a { padding: 5px 8px; font-size: 12px; }

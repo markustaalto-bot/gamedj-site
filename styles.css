@@ -381,3 +381,18 @@ footer.site { border-top: 1px solid var(--border); padding: 44px 0; margin-top: 
   .docs-body h2 { font-size: 23px; }
   .btn-lg { padding: 14px 22px; font-size: 15px; }
 }
+
+/* Beta-ilmoitusbanneri — lang.js injektoi sen jokaisen sivun ylälaitaan.
+   Betan päättyessä: poista tämä lohko + banner()-kutsu lang.js:stä. */
+.beta-banner {
+  background: var(--grad-brand);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.45;
+  padding: 9px 16px;
+}
+.beta-banner strong { font-weight: 700; letter-spacing: .02em; }
+.beta-banner a { color: #fff; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.beta-banner a:hover { opacity: .85; }

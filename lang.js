@@ -70,9 +70,23 @@
       })(links[i])
     }
   }
+  // Beta-ilmoitusbanneri jokaisen sivun ylälaitaan (kaksikielinen).
+  // Betan päättyessä: poista tämä funktio + sen kutsu ja .beta-banner-CSS.
+  function banner() {
+    if (!document.body || document.querySelector('.beta-banner')) return
+    var mail = '<a href="mailto:gamedj@waveric.fi?subject=Game%20DJ%20beta%20licence">gamedj@waveric.fi</a>'
+    var el = document.createElement('div')
+    el.className = 'beta-banner'
+    el.innerHTML = current === 'fi'
+      ? '<strong>BETA</strong> — Game DJ on yhä beta-vaiheessa. Haluatko lisenssin beta-aikana? Kirjoita ' + mail
+      : '<strong>BETA</strong> — Game DJ is still in beta. Want a licence during the beta? Email ' + mail
+    document.body.insertBefore(el, document.body.firstChild)
+  }
+
+  function init() { wire(); banner() }
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', wire)
+    document.addEventListener('DOMContentLoaded', init)
   } else {
-    wire()
+    init()
   }
 })()
